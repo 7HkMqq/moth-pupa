@@ -1,1 +1,57 @@
+/* CSS-переменные (пункт 9 из твоего задания) */
+:root {
+    --primary-color: #2c2c2c; /* Темный цвет для текста */
+    --accent-color: #d4a373; /* Акцентный цвет (бежевый/коричневый) */
+    --bg-color: #fefae0; /* Светлый фон */
+    --text-color: #333;
+}
 
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* Стили для шапки */
+header {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+    letter-spacing: 2px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    transition: color 0.3s ease;
+}
+
+/* Пункт 10 из задания: hover-эффект */
+nav a:hover {
+    color: var(--accent-color);
+}
+
+main {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+}
