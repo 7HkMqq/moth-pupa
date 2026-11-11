@@ -276,3 +276,42 @@ footer {
     font-size: 18px;
     margin-top: 10px;
 }
+/* --- Стили для страницы О нас --- */
+.about-section {
+    padding: 40px 0;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.about-content {
+    background-color: var(--white);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.about-text p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.about-text h3 {
+    color: var(--accent-color);
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.about-list {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.about-list li {
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+    font-size: 16px;
+}
+
+.about-list li:last-child {
+    border-bottom: none;
+}
