@@ -147,13 +147,10 @@ section h2 {
 }
 
 .product-card__img {
-    background-color: #ddd;
-    height: 300px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #888;
-    font-size: 14px;
+    width: 100%;
+    height: 300px; /* Фиксированная высота, чтобы все карточки были ровными */
+    object-fit: cover; /* Это свойство обрезает картинку так, чтобы она заполнила блок, не искажая пропорции */
+    display: block;
 }
 
 .product-card__title {
