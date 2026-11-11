@@ -218,3 +218,61 @@ footer {
 .size-table tr:hover {
     background-color: #f9f9f9;
 }
+/* --- Стили для страницы Контакты --- */
+.contacts-section {
+    padding: 40px 0;
+    max-width: 600px; /* Ограничиваем ширину формы, чтобы она не растягивалась на весь экран */
+    margin: 0 auto;
+}
+
+.contacts-text {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 18px;
+}
+
+.form-container {
+    background-color: var(--white);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.form-group {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column; /* Ставим подпись над полем ввода */
+}
+
+.form-group label {
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.form-group input, 
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: inherit; /* Чтобы шрифт в полях совпадал со шрифтом сайта */
+    font-size: 16px;
+    box-sizing: border-box; /* Важно: чтобы padding не увеличивал ширину поля */
+    transition: border-color 0.3s ease;
+}
+
+.form-group input:focus, 
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--accent-color);
+    box-shadow: 0 0 5px rgba(212, 163, 115, 0.3);
+}
+
+.submit-btn {
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    margin-top: 10px;
+}
